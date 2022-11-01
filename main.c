@@ -5,9 +5,9 @@
 #include <string.h>
 
 // Argp declarations
-const char* argp_program_version = "base-converter 1.0.0";
+const char* argp_program_version = "base-conv 1.0.0";
 const char* argp_program_bug_address = "matti.armston@gmail.com";
-static char doc[] = "Converts between hexadecimal and decimal numbers";
+static char doc[] = "Converts a number from base 2-36 to base 2-36";
 static char args_doc[] = "NUMBER BASE_FROM BASE_TO";
 static struct argp_option options[] = {
   {"output-file", 'o', "FILE", 0, "Write output to FILE"},
@@ -99,25 +99,6 @@ int intFromChar(char* digit) {
   }
   int asciiVal = tolower(*digit);
   return asciiVal - 87;
-
-  // This won't ever be called
-  // It is safer but also slower to write and I can't be bothered to
-  switch(tolower(*digit)) {
-    case 'a':
-      return 10;
-    case 'b':
-      return 11;
-    case 'c':
-      return 12;
-    case 'd':
-      return 13;
-    case 'e':
-      return 14;
-    case 'f':
-      return 15;
-    default:
-      return val; // This will be zero
-  }
 }
 
 int getStrNumVal(char* strNum, int base) {
