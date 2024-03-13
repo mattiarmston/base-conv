@@ -100,7 +100,8 @@ int intFromChar(char* digit) {
   int asciiVal = tolower(*digit);
   if ((asciiVal < 97) || (asciiVal > 122)) {
     // the ascii values of all lowercase letters are between 97 and 122
-    // if asciiVal is not in between these values, then we have likely inputed a symbol
+    // if asciiVal is not in between these values,
+    // then we have likely inputed a symbol
     return -1; // error value
   }
   // the ascii value of 'a' is 97, 'b' is 98...
@@ -116,11 +117,13 @@ int validateStrNum(char* strNum, int base) {
     char charDigit = strNum[i];
     int digit = intFromChar(&charDigit);
     if (digit == -1) {
-      printf("Error: invalid character '%c', must be a number or letter\n", charDigit);
+      printf("Error: invalid character '%c', must be a number or letter\n",
+          charDigit);
       return 0; // invalid number
     }
     if (digit >= base) {
-      printf("Error: invalid number, '%c' is not a valid base %d digit\n", charDigit, base);
+      printf("Error: invalid number, '%c' is not a valid base %d digit\n",
+          charDigit, base);
       return 0; // invalid number
     }
   }

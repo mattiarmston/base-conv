@@ -1,2 +1,2 @@
-main: main.c
-	gcc -Wall -o main main.c -lm
+base-conv: main.c
+	gcc -Wall -o base-conv main.c -lm
