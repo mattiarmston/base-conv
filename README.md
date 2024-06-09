@@ -7,7 +7,7 @@ A program to convert a number between 1 and 999,999,999 between bases from
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Crus4d3/base-conv.git
+    git clone https://github.com/mattiarmston/base-conv.git
     ```
 2. Navigate to the instillation directory
     ```bash
