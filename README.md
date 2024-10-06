@@ -39,4 +39,4 @@ See `base-conv --help` for more details.
 
 ## Source code
 
-Source code can be found at [github.com/crus4d3/base-conv](https://github.com/crus4d3/base-conv)
+Source code can be found at [github.com/mattiarmston/base-conv](https://github.com/mattiarmston/base-conv)
